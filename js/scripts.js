@@ -126,8 +126,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 });
-
-document.querySelector("#contactForm").addEventListener("submit", (event) => {
-  event.preventDefault();
-  console.log("TOOOOOOO");
-});
+const contactForm = document.querySelector("#contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log("TOOOOOOO");
+  });
+}

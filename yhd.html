@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The House of Afros, Capes and Curls</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <style>
+        h1 {
+            margin-top: 20px;
+            font-family: "Tinos", serif;
+        }
+
+        a:hover {
+            opacity: 0.5;
+        }
+
+        .yhd-header {
+            width: 100%;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #EF8A17;
+        }
+
+        .img-thumbnail {
+            transition: transform .2s;
+        }
+
+        .img-thumbnail:hover {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+
+        #v-pills-tab .nav-link {
+            color: black;
+            width: 200px;
+        }
+
+        #mainNav {
+            background-color: #BFBFBF;
+        }
+
+        #mainNav .navbar-brand {
+            color: #333;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link {
+            color: #333;
+        }
+
+        @media (min-width: 992px) {
+            #mainNav.navbar-shrink {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background-color: #BFBFBF;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <!--<img src="assets/img/logos/hoacc-millennial-shield_1.jpg" width="200" alt="..." />-->The
+                House of Afros, Capes and Curls
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community_engagement.html">Community Engagement</a>
+                    </li>
+                    
+                    <li class="nav-item education"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="specialevents.html">Special Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <h1 class="section-heading text-uppercase">
+                            The Young History Detectives
+                        </h1>
+                        <h3 class="section-subheading">
+                            We gather information and resources for our files, to inspire
+                            others to learn and love history.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/img/yhd-header.png" alt="Young History Detectives" class="yhd-header" />
+                </div>
+            </div>
+            <div class="row text-center mt-3">
+                <div class="col-md-12">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-steam-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-steam" type="button" role="tab" aria-controls="v-pills-steam"
+                                aria-selected="true">
+                                Youth Steam Workshop
+                            </button>
+                            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">
+                                YHD Summer Camp
+                            </button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
+                                Spacial Memory Project
+                            </button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
+                                AfroCon Popup 2021
+                            </button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                Sign Up
+                            </button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-steam" role="tabpanel"
+                                aria-labelledby="v-pills-steam-tab">
+                                <h2>Youth Steam Workshop</h2>
+                                <p>The Young History Detectives are getting ready for the SteamPunk Tea Party with a
+                                    morning of coding, experiments, and fun. All youth participants will receive a
+                                    custom kit with activities and a k-12 ticket to the SteamPunk Tea Party on June 18.
+                                </p>
+
+                            </div>
+                            <div class="tab-pane fade show" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <h2>YHD Summer Camp</h2>
+                                <p>The goal of the YHD Summer Camp is to create an interactive walk through history that
+                                    can be accessed throughout the community and develop: critical thinking, problem
+                                    solving, cultural enrichment, research & documentation skills.</p>
+                                <p><a style="color:#5D8094"
+                                        href="https://www.canva.com/design/DAEnYyq8xlA/view?utm_content=DAEnYyq8xlA&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                                        target="_blank">Check out our newsletter!</a></p>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/11.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/12.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col"> <img src="assets/img/yhd/camp/13.jpg" class="img-thumbnail"
+                                            alt="..."></div>
+                                    <div class="col"><img src="assets/img/yhd/camp/14.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/15.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/1.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/2.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col"> <img src="assets/img/yhd/camp/6.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                    <div class="col"><img src="assets/img/yhd/camp/7.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                    <div class="col"><img src="assets/img/yhd/camp/5.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/3.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/4.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="col"> <img src="assets/img/yhd/camp/8.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                    <div class="col"><img src="assets/img/yhd/camp/9.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+
+                                    <div class="col"> <img src="assets/img/yhd/camp/18.jpg" class="img-thumbnail"
+                                            alt="..."></div>
+                                    <div class="col"><img src="assets/img/yhd/camp/17.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                    <div class="col"><img src="assets/img/yhd/camp/16.jpg" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                    <div class="col">
+                                        <img src="assets/img/yhd/camp/10.jpg" class="img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <h2>Spacial Memory Project</h2>
+                                <p>This summer the YHD are conducting a spatial memory project. Students will select
+                                    businesses and empty lots on primarily 24th, and then 16th and 30th Streets, observe
+                                    what is currently there and research its history. The final part of the project asks
+                                    students to reimagine spaces and discuss what could or should be in those spaces to
+                                    benefit the community. </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="carouselExampleControls" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/yhd/spacial-memory/slide1.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/yhd/spacial-memory/slide2.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/yhd/spacial-memory/slide3.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/yhd/spacial-memory/slide4.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/yhd/spacial-memory/slide5.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/yhd/spacial-memory/slide6.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/yhd/spacial-memory/slide7.jpg"
+                                                        class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <h2>AfroCon PopUp 2021</h2>
+                                <p>The goal of the YHD Summer Camp is to create an interactive walk through history that
+                                    can be accessed throughout the community and develop: critical thinking, problem
+                                    solving, cultural enrichment, research & documentation skills.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h2>Sign up</h2>
+                                <p>Sign up your child for the Young History Detectives</p>
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress"
+                                            placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress2" class="form-label">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2"
+                                            placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
