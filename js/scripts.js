@@ -53,10 +53,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (nav) {
     console.log(nav);
     nav.innerHTML = `
-        <div class="container">
-        <a class="navbar-brand" href="#page-top">
-          <!--<img src="assets/img/logos/hoacc-millennial-shield_1.jpg" width="200" alt="..." />-->The
-          House of Afros, Capes and Curls
+        <div class="container flex-wrap">
+        <a class="navbar-brand d-none d-sm-block" href="#page-top">
+          <!--<img src="assets/img/logos/hoacc-millennial-shield_1.jpg" width="200" alt="..." />-->
+          <div style="display:flex">
+          <span>TheHouse of Afros, Capes and Curls</span></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
