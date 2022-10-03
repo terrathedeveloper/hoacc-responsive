@@ -78,7 +78,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
             <li class="nav-item"><a class="nav-link" href="community_engagement.html">Community Engagement</a></li>
             <li class="nav-item education"><a class="nav-link" href="education.html">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="specialevents.html">Special Events</a></li>
@@ -97,9 +96,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
             Copyright &copy; The House of Afros, Capes and Curls 2021
           </div>
           <div class="col-lg-4 my-3 my-lg-0">
-            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/_HOACC"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/afroscapescurls/"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_hoacc/"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://discord.gg/EhWcvQWBu6"><i class="fab fa-discord"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.twitch.tv/thehouseofafroscapescurls"><i class="fab fa-twitch"></i></a>
           </div>
           <div class="col-lg-4 text-lg-end">
             <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
@@ -130,6 +131,18 @@ const contactForm = document.querySelector("#contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    console.log("TOOOOOOO");
+    const serviceID = 'default_service';
+    const templateID = 'template_swy84qy';
+    let formData = new FormData(event.target);
+    let message = Object.fromEntries(formData)
+    emailjs.sendForm(serviceID, templateID, "#contactForm")
+    .then(() => {
+     // btn.value = 'Send Email';
+      let submitBtn = document.querySelector('#submitButton');
+      submitBtn.innerHTML = "Message Sent!"
+    }, (err) => {
+      //btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
   });
 }

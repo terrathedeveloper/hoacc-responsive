@@ -29,7 +29,7 @@ body{
 }
 
 /*   About the Team Paragraph Toggle*/
-input {
+input[type=checkbox] {
     opacity: 0;
     position: absolute;
     pointer-events: none;
